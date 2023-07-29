@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- ==================================== Navigation Bar ===============================-->
+
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="logo flex">
+                <img src="https://files.codingninjas.com/ninja-user-4-11070.svg" alt="">
+                <i>Parwez Alam</i>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="logo flex">
+                        <img src="https://files.codingninjas.com/ninja-user-4-11070.svg" alt="">
+                        <i>Parwez Alam</i>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav_menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#qualifications">Qualifications</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="Container">
+
+        <!-- ==================================== Home section ===============================-->
+
+        <div id="Home" class="landingPage flex">
+            <div class="lpContent">
+                <h2>Hey, <span id="greetingMsg"></span>..</h2>
+                <br>
+                <h3>I'm Parwez, <br> <span class="typing"></span> </h3> <br>
+                <div class="about_contents">
+                    <p class="contents">
+                        Myself Parwez Alam Ansari, CSE'24, an Android Developer in Java and Kotlin. Love to solve
+                        different DSA problems and develop amazing projects. I'm very much curious to learn new
+                        technologies and enhance my
+                        skills. My aim is to improve my skills and personality .
+                    </p>
+                </div>
+                <br>
+                <button class="btns"><a style="text-decoration: none;"
+                        href="https://drive.google.com/file/d/1N9uw-OYNqnCSl1V8J3zllCuxk8WERE4K/view?usp=drivesdk"
+                        download>Download CV <i class="bi bi-arrow-down-circle-fill"></i></a>
+                </button>
+
+            </div>
+            <div class="lpImg">
+                <img src="https://www.munir.co.in/personal/img/full-stack-developer.png" alt="">
+            </div>
+        </div>
+
+        <!-- ==================================== back to top button ===============================-->
+        <a href="#Home" class="top-btn" id="top-btn">
+            <button type="button" class="btn btn-dark">
+                <img src="https://ps.w.org/back-to-the-top-button/assets/icon-256x256.png" alt="">
+            </button>
+        </a>
+
+        <!-- ==================================== About Section ===============================-->
+
+        <h2 id="About" class="title">About me..</h2>
+        <div class="aboutDev flex">
+            <img src="img/profile.jpg" alt="">
+            <p class="contents">
+                I'm Parwez Alam Ansari , a Passionate Android developer and have a knowledge of Front-End web Developer,
+                always have intention to learn, grow and
+                enhance my skills.
+
+                I'm a CSE student at Aliah University, Newtown, Kolkata, WB.
+                <br>
+                Thanks for your valueable time ..
+            </p>
+        </div>
+
+        <!-- ==================================== Skills section ===============================-->
+
+        <h2 id="skills" class="title center">My Skills</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="img/andriod.png" alt="">
+                        <h2 class="contents">Java </h2>
+                        <p>
+                            I do use Java as Backend
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="img/kotlin.png" alt="">
+                        <h2 class="contents"> Kotlin </h2>
+                        <p>
+                            I do use Kotlin for Backend
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="https://www.drupal.org/files/project-images/bootstrap-stack.png" alt="">
+                        <h2 class="contents">Bootstrap</h2>
+                        <p>
+                            I also use Bootstrap for more osm UI in Web-Dev.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="https://cdn-media-1.freecodecamp.org/images/0*CPTNvq87xG-sUGdx.png" alt="">
+                        <h2 class="contents">Firebase</h2>
+                        <p>
+                            Use to store and serve user-generated content.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg"
+                            alt="">
+                        <h2 class="contents">Linux OS</h2>
+                        <p>
+                            Well known in linux os and unix system.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="https://lilacinfotech.com/lilac_assets/images/blog/Guidelines-to-b-a-good-programmer.jpg"
+                            alt="">
+                        <h2 class="contents">Problem Solving</h2>
+                        <p>
+                            I'm well in D S A, enhancing more and more...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/12/programming-language-1024x515.png"
+                            alt="">
+                        <h2 class="contents">Expertised Languages</h2>
+                        <p>
+                            I'm well known in C++, Java, Python, Java, C, Javascript and more..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider-box">
+                        <img src="https://gutsytechster.files.wordpress.com/2019/11/computer-science.png?w=863&h=0&crop=1"
+                            alt="">
+                        <h2 class="contents">CS Fundamentals</h2>
+                        <p>
+                            Well known in OOPs, DBMS, OS and other fundamentals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ==================================== Projects Section  ===============================-->
+
+        <h2 id="projects" class="title center" id="projects">Project Works..</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- ======================= mern crud 1 ==========================-->
+                <div class="swiper-slide">
+                    <div class="slider-box projects">
+                        <img class="project-img" src="./img/notes.png" alt="">
+                        <h2 class="contents">To-Do (React)</h2>
+
+                        <div style="width: 100%; justify-content: space-evenly;" class="flex">
+                            <a class="project-link" href="https://github.com/Parwez07/React-todo">
+                                view <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </a>
+
+                            <a class="project-link" href="https://github.com/Parwez07/photoAlbum">
+                                code <i class="bi bi-github"></i></a>
+                        </div>
+                        <p class="project-details">
+                            Technolgies : React
+                            <br>
+                            It's simple Notes taking app Using React Concept and use html and css for design the UI..
+                        </p>
+
+                    </div>
+                </div>
+                <!-- ======================= note app 2  ==========================-->
+                <div class="swiper-slide">
+                    <div class="slider-box projects">
+                        <img class="project-img"
+                            src="https://img.freepik.com/free-vector/hand-painted-quote-box-frame-collection_23-2148952677.jpg?w=2000"
+                            alt="">
+                        <h2 class="contents">Photo Frame (Java)</h2>
+
+                        <div style="width: 100%; justify-content: space-evenly;" class="flex">
+                            <a class="project-link" href="https://github.com/Parwez07/photoAlbum">
+                                view <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </a>
+
+                            <a class="project-link" href="https://github.com/Parwez07/photoAlbum">
+                                code <i class="bi bi-github"></i></a>
+                        </div>
+                        <p class="project-details">
+                            Technolgies : MVVM,Picasso Library ,SqLite Room-DataBase, Android SDK , Java, Xml
+                            <br>
+                            It's simple photo frame app . That get photo from the gallery and under that You can write
+                            somthing memoriable abouy that photo
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- ======================= movie app 3  ==========================-->
+                <div class="swiper-slide">
+                    <div class="slider-box projects">
+                        <img class="project-img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRdACwx2Hc6_x4wd7g9bBv0iHvPltitw1Y2Q&usqp=CAU"
+                            alt="">
+                        <h2 class="contents">MovieFlix</h2>
+
+                        <div style="width: 100%; justify-content: space-evenly;" class="flex">
+                            <a class="project-link" href="https://mk-movieflix.netlify.app/">
+                                view <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </a>
+
+                            <a class="project-link" href="https://github.com/Parwez07/movieFlix">
+                                code <i class="bi bi-github"></i></a>
+                        </div>
+                        <p class="project-details">
+                            MovieFlix is a full stack app developed using React, API . Here
+                            you will find treding movies, tv shows, search for movies, search using genres.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- ======================= note app 4  ==========================-->
+                <div class="swiper-slide">
+                    <div class="slider-box projects">
+                        <img class="project-img"
+                            src="https://www.iconbunny.com/icons/media/catalog/product/3/4/3426.6-sticky-notes-icon-iconbunny.jpg"
+                            alt="">
+                        <h2 class="contents">Todo App (Java)</h2>
+
+                        <div style="width: 100%; justify-content: space-evenly;" class="flex">
+                            <a class="project-link" href="https://github.com/Parwez07/NotesApp">
+                                view <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </a>
+
+                            <a class="project-link" href="https://github.com/Parwez07/NotesApp">
+                                code <i class="bi bi-github"></i></a>
+                        </div>
+                        <p class="project-details">
+                            Technolgies : MVVM, Android Jepack, Room-DataBase, Android SDK , Java, Xml
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ==================================== Experience Section  ===============================-->
+        <br>
+        <h2 id="qualifications" class="title center">Qualification</h2>
+        <div class="experience">
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#internship">
+                            <i class="bi bi-briefcase-fill"></i>
+                            Internship
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__sections">
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Class Xth</h3>
+                                    <span class="qualification__subtitle">Ms Memorial Public
+                                        School,Balganga,Motihari</span>
+                                    <div class="qualification__calendar">
+                                        <i class="bi bi-calendar-check-fill"></i>
+                                        2015 - 2017
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Class XIIth</h3>
+                                    <span class="qualification__subtitle">Ms Memorial Public School ,Balgang ,
+                                        Motihari</span>
+                                    <div class="qualification__calendar">
+                                        <i class="bi bi-calendar-check-fill"></i>
+                                        2017 - 2019
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Btech in CSE</h3>
+                                    <span class="qualification__subtitle">Aliah University - Kolkata</span>
+                                    <div class="qualification__calendar">
+                                        <i class="bi bi-calendar-check-fill"></i>
+                                        2020 - 2024
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-------------------------- internship details ----------------------------->
+
+                        <div class="qualification__content" data-content id="internship">
+                            <!-- <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">MERN Developer</h3>
+                                    <span class="qualification__subtitle">The Ditinix Hosting - (WFH)</span>
+                                    <div class="qualification__calendar">
+                                        <i class="bi bi-calendar-check-fill"></i>
+                                        Sept'2022 - Dec'2022
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                     <span class="qualification__line"></span> 
+                                </div>
+                            </div> -->
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Teaching Assistant</h3>
+                                    <span class="qualification__subtitle">Coding Ninjahs - (WFH)</span>
+                                    <div class="qualification__calendar">
+                                        <i class="bi bi-calendar-check-fill"></i>
+                                        Aug'23 - Dec'23
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Open Source Contribution</h3>
+                                    <span class="qualification__subtitle">Hactoberfest'22</span>
+                                    <div class="qualification__calendar">
+                                        <i class="bi bi-calendar-check-fill"></i>
+                                        Oct'2022 - Oct'2022
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+
+        <!-- ==================================== Contact us Section  ===============================-->
+        <h2 id="Contact" class="title center">Contact us..</h2>
+        <div class="contact-us flex">
+            <div class="my_details">
+                <h4 class="title center">Get In Touch..</h4>
+                <span class="flex">
+                    <h1 class="details_icon"> <i class="bi bi-person-fill"></i> </h1>
+                    <h1 class="contents">Parwez Alam Ansari </h1>
+                </span>
+                <span class="flex">
+                    <h1 class="details_icon"><i class="bi bi-envelope-check-fill"></i></h1>
+                    <a style="text-decoration: none;" href="mailto:mohsinraja4667@gmail.com">
+                        <h1 style="color: darkgoldenrod; text-decoration: underline;" class="contents">
+                            h786parwezalam@gmail.com</h1>
+                    </a>
+                </span>
+                <span class="flex">
+                    <h1 class="details_icon"> <i class="bi bi-geo-alt-fill"></i></h1>
+                    <h1 class="contents">Newtown, Kolkata</h1>
+                </span>
+            </div>
+            <div class="contact_section">
+                <h4 class="title center">Message me..</h4>
+                <form class="contact_form flex" action="https://formspree.io/f/xgeddjvb" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name..">
+                    <input type="email" name="email" placeholder="Enter Your Email..">
+                    <textarea type="text" name="message" placeholder="Enter Your Message.."></textarea>
+
+                    <input class="btns" type="submit" value="Send Message" />
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ==================================== Footer Section ===============================-->
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/parwez-alam-0076381bb/" target="_blank">
+                <img class="footer_links_img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"
+                    alt="">
+            </a>
+
+            <a href="https://github.com/Parwez07" target="_blank">
+                <img class="footer_links_img"
+                    src="https://www.kindpng.com/picc/m/613-6133946_github-awesome-logo-svg-hd-png-download.png" alt="">
+            </a>
+
+            <a href="https://leetcode.com/parwez07/" target="_blank">
+                <img class="footer_links_img"
+                    src="https://user-images.githubusercontent.com/32040901/79929570-197c2480-8414-11ea-9358-c92a53916a7f.png"
+                    alt="">
+            </a>
+
+            <a href="https://auth.geeksforgeeks.org/user/parwez07/practice" target="_blank">
+                <img class="footer_links_img" src="http://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200-1.png"
+                    alt="">
+            </a>
+
+
+        </div>
+        <span>
+            Copyrights&copy; | | Alrights reserveds!!
+        </span>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+</html>
